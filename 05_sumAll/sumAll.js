@@ -1,5 +1,5 @@
 const sumAll = function(numberOne, numberTwo) {
-    if(numberOne<0||numberTwo<0){
+    if(numberOne<0||numberTwo<0||typeof numberOne!='number'||typeof numberTwo!='number'){
         return 'ERROR';
     }
     let small;
