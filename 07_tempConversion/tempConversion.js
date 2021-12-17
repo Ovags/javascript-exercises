@@ -5,8 +5,11 @@ const ftoc = function(tempInFahrenheit) {
   }return tempInCelsius;
 };
 
-const ctof = function() {
-
+const ctof = function(tempInCelsius) {
+  let tempInFahrenheit=tempInCelsius*1.8+32;
+  if (!Number.isInteger(tempInFahrenheit)){
+    return parseFloat((tempInFahrenheit).toFixed(1));
+  }return tempInFahrenheit;
 };
 
 // Do not edit below this line
